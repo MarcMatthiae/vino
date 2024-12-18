@@ -1,0 +1,49 @@
+body {
+  background-color: rgb(245, 245, 247);
+  font-family: Verdana, Geneva, sans-serif;
+
+  .vinery-app {
+    margin: 32px 8px;
+
+    /* Position the overlay */
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(
+        0,
+        0,
+        0,
+        0.8
+      ); /* Dark semi-transparent background */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      visibility: hidden; /* Hidden by default */
+      opacity: 0;
+      transition: visibility 0s, opacity 0.2s;
+      z-index: 1000;
+    }
+
+    /* Make the overlay visible */
+    .overlay.visible {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    /* Style for the larger image */
+    .overlay img {
+      max-width: 90%;
+      max-height: 90%;
+      border: 2px solid #fff;
+      border-radius: 8px;
+    }
+
+    /* Prevent scrolling while overlay is active */
+    body.no-scroll {
+      overflow: hidden;
+    }
+  }
+}

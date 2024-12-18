@@ -1,0 +1,77 @@
+.vinery-list {
+  width: 60%; /* A bit wider for a better layout */
+  margin: auto;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .vinery {
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    padding: 16px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #d1e0c5;
+      transform: translateY(-1px); /* Adds a slight lift effect */
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+
+    .name {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      gap: 16px;
+      height: 64px;
+
+      h2 {
+        margin: 0;
+        font-weight: 400;
+      }
+
+      .logo {
+        max-height: 64px;
+        max-width: 128px;
+        object-fit: contain;
+      }
+
+      .country {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .fi {
+          padding: 0;
+          width: 64px; /* Set the width of the circle */
+          height: 64px; /* Set the height equal to the width to make it a circle */
+
+          clip-path: circle(37% at 50% 50%); /* Makes the div circular */
+          background-size: 120%;
+
+          /* Set the SVG as the background image */
+          background-size: contain; /* Ensure the SVG fits inside the circle */
+          background-position: center; /* Center the SVG within the div */
+          background-repeat: no-repeat; /* Prevent the background from repeating */
+        }
+      }
+    }
+
+    .impressions {
+      img {
+        width: 128px;
+        max-height: 50%;
+      }
+    }
+  }
+}

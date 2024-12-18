@@ -1,0 +1,22 @@
+{
+  "vineries": [
+    {
+      "id": 1,
+      "key": "",
+      "name": "Erwin Sabathi",
+      "logo": "erwin-sabathi.logo.png",
+      "vinery": "erwin-sabathi.vinery.jpg",
+      "country": "at",
+      "country_name": "Österreich"
+    },
+    {
+      "id": 2,
+      "key": "",
+      "name": "Viña Garcés Silva",
+      "logo": "garces-silva.logo.png",
+      "vinery": "garces-silva.vinery.jpg",
+      "country": "cl",
+      "country_name": "Chile"
+    }
+  ]
+}
