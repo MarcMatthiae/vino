@@ -4,10 +4,9 @@ import wineryData from "./data/wineries.json"; // Assuming the file is in `src/`
 import "./App.css";
 import { useState } from "react";
 import { WineList } from "./wine-list/wine-list";
-import { BrowserRouter, Route, Routes, useLocation } from "react-router";
+import { BrowserRouter, Route, Routes } from "react-router";
 import { Wine } from "./wine/wine";
 import { WineryList } from "./winery-list/winery-list";
-import React from "react";
 
 function App() {
   const wineArray = wineData.wines;
