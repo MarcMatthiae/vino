@@ -22,7 +22,7 @@ function App() {
   };
 
   return (
-    <div className="vinery-app">
+    <div className="@container/main vinery-app">
       <VineryList
         vineries={vineryArray}
         showOverlay={(imgSrc) => showOverlay(imgSrc)}

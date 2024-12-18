@@ -17,11 +17,14 @@ export interface Vinery {
 
 export const VineryList = ({ vineries, showOverlay }: VineryListProps) => {
   return (
-    <ul className="vinery-list">
+    <ul className="vinery-list @[1024px]/main:w-2/3 w-full">
       {vineries.map((vinery) => (
-        <li key={vinery.id} className="vinery">
-          <div className="name">
-            <h2>{vinery.name}</h2>
+        <li
+          key={vinery.id}
+          className="bg-white vinery p-4 list-none flex flex-col gap-2 shadow-slate-500 shadow-sm rounded-md"
+        >
+          <div className="name border-b-2">
+            <h2 className="font-neutral-700">{vinery.name}</h2>
             <img
               src={"./assets/" + vinery.logo}
               alt={`${vinery.name} Logo`}

@@ -17,6 +17,15 @@
       "vinery": "garces-silva.vinery.jpg",
       "country": "cl",
       "country_name": "Chile"
+    },
+    {
+      "id": 3,
+      "key": "",
+      "name": "Georges Michel Estate Wines",
+      "logo": "georges-michel.logo.jpg",
+      "vinery": "georges-michel.vinery.jpg",
+      "country": "nz",
+      "country_name": "Neuseeland"
     }
   ]
 }
