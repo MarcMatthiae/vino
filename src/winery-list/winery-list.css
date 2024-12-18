@@ -1,11 +1,11 @@
-.vinery-list {
+.winery-list {
   margin: auto;
   padding: 0;
   list-style: none;
   display: flex;
   flex-direction: column;
 
-  .vinery {
+  .winery {
     transition: background-color 0.3s ease, transform 0.2s ease;
     cursor: pointer;
 

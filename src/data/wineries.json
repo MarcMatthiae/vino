@@ -1,11 +1,11 @@
 {
-  "vineries": [
+  "wineries": [
     {
       "id": 1,
       "key": "",
       "name": "Erwin Sabathi",
       "logo": "erwin-sabathi.logo.png",
-      "vinery": "erwin-sabathi.vinery.jpg",
+      "winery": "erwin-sabathi.winery.jpg",
       "country": "at",
       "country_name": "Österreich"
     },
@@ -14,7 +14,7 @@
       "key": "",
       "name": "Viña Garcés Silva",
       "logo": "garces-silva.logo.png",
-      "vinery": "garces-silva.vinery.jpg",
+      "winery": "garces-silva.winery.jpg",
       "country": "cl",
       "country_name": "Chile"
     },
@@ -23,7 +23,7 @@
       "key": "",
       "name": "Georges Michel Estate Wines",
       "logo": "georges-michel.logo.jpg",
-      "vinery": "georges-michel.vinery.jpg",
+      "winery": "georges-michel.winery.jpg",
       "country": "nz",
       "country_name": "Neuseeland"
     }

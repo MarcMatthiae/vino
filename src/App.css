@@ -1,8 +1,8 @@
 body {
-  background-color: rgb(245, 245, 247);
+  @apply bg-stone-400;
   font-family: Verdana, Geneva, sans-serif;
 
-  .vinery-app {
+  .winery-app {
     margin: 32px 8px;
 
     /* Position the overlay */
