@@ -27,47 +27,45 @@ function App() {
   };
 
   return (
-    <>
+    <div className="@container/main winery-app">
       <BrowserRouter>
-        <div className="@container/main winery-app">
-          <Routes>
-            <Route
-              index
-              element={
-                <WineList
-                  wines={wineArray}
-                  showOverlay={(imgSrc) => showOverlay(imgSrc)}
-                />
-              }
-            />
-            <Route
-              path="wine/:wineId"
-              element={
-                <Wine
-                  wines={wineArray}
-                  wineries={wineryArray}
-                  showOverlay={(imgSrc) => showOverlay(imgSrc)}
-                />
-              }
-            />
-            <Route
-              path="wineries"
-              element={
-                <WineryList
-                  wineries={wineryArray}
-                  showOverlay={(imgSrc) => showOverlay(imgSrc)}
-                />
-              }
-            />
-          </Routes>
-        </div>
+        <Routes>
+          <Route
+            index
+            element={
+              <WineList
+                wines={wineArray}
+                showOverlay={(imgSrc) => showOverlay(imgSrc)}
+              />
+            }
+          />
+          <Route
+            path="wine/:wineId"
+            element={
+              <Wine
+                wines={wineArray}
+                wineries={wineryArray}
+                showOverlay={(imgSrc) => showOverlay(imgSrc)}
+              />
+            }
+          />
+          <Route
+            path="wineries"
+            element={
+              <WineryList
+                wineries={wineryArray}
+                showOverlay={(imgSrc) => showOverlay(imgSrc)}
+              />
+            }
+          />
+        </Routes>
       </BrowserRouter>
       {overlayImage && (
         <div className="overlay visible" onClick={hideOverlay}>
           <img src={overlayImage} alt="Larger view" />
         </div>
       )}
-    </>
+    </div>
   );
 }
 

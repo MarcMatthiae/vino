@@ -1,53 +1,49 @@
-:root {
-  background-image: url("/assets/grapes-background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  font-family: Verdana, Geneva, sans-serif;
+body,
+html {
+  height: 100%;
+  margin: 0;
 
-  .winery-app {
-    margin: 32px 8px;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+.winery-app {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+
+  /* Position the overlay */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark semi-transparent background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden; /* Hidden by default */
+    opacity: 0;
+    transition: visibility 0s, opacity 0.2s;
+    z-index: 1000;
+  }
 
-    /* Position the overlay */
-    .overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(
-        0,
-        0,
-        0,
-        0.8
-      ); /* Dark semi-transparent background */
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      visibility: hidden; /* Hidden by default */
-      opacity: 0;
-      transition: visibility 0s, opacity 0.2s;
-      z-index: 1000;
-    }
+  /* Make the overlay visible */
+  .overlay.visible {
+    visibility: visible;
+    opacity: 1;
+  }
 
-    /* Make the overlay visible */
-    .overlay.visible {
-      visibility: visible;
-      opacity: 1;
-    }
+  /* Style for the larger image */
+  .overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    border: 2px solid #fff;
+    border-radius: 8px;
+  }
 
-    /* Style for the larger image */
-    .overlay img {
-      max-width: 90%;
-      max-height: 90%;
-      border: 2px solid #fff;
-      border-radius: 8px;
-    }
-
-    /* Prevent scrolling while overlay is active */
-    body.no-scroll {
-      overflow: hidden;
-    }
+  /* Prevent scrolling while overlay is active */
+  body.no-scroll {
+    overflow: hidden;
   }
 }

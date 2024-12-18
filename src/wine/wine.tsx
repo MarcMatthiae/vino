@@ -1,5 +1,6 @@
 import { useParams } from "react-router";
 import { Winery, WineryData } from "../winery/winery";
+import "./wine.css";
 
 export interface WineProps {
   wines: Wine[];
@@ -12,6 +13,7 @@ export interface Wine {
   winery_id: number;
   name: string;
   bottle_image: string;
+  background_image?: string;
   description: string;
   quickfacts?: {
     label: string;
@@ -28,7 +30,14 @@ export const Wine = ({ wines, wineries, showOverlay }: WineProps) => {
   );
   return (
     wine && (
-      <>
+      <div
+        style={{
+          backgroundImage: `url('/assets/${
+            wine.background_image || "grapes-background.jpg"
+          }')`,
+        }}
+        className={`wine-portrait`}
+      >
         <div className="wine @[1024px]/main:w-11/12 w-full m-auto bg-stone-200 bg-opacity-75 text-stone-700 wine p-4 list-none grid grid-cols-12 gap-2 shadow-slate-500 shadow-sm rounded-md mb-2 last:mb-0">
           <div className="flex flex-col justify-start items-start col-span-9">
             <h2 className="text-left text-3xl font-bold text-stone-700 mb-4">
@@ -59,7 +68,7 @@ export const Wine = ({ wines, wineries, showOverlay }: WineProps) => {
           </div>
         </div>
         {winery && <Winery winery={winery} showOverlay={showOverlay}></Winery>}
-      </>
+      </div>
     )
   );
 };
