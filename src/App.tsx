@@ -4,9 +4,10 @@ import wineryData from "./data/wineries.json"; // Assuming the file is in `src/`
 import "./App.css";
 import { useState } from "react";
 import { WineList } from "./wine-list/wine-list";
-import { BrowserRouter, Route, Routes } from "react-router";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router";
 import { Wine } from "./wine/wine";
 import { WineryList } from "./winery-list/winery-list";
+import React from "react";
 
 function App() {
   const wineArray = wineData.wines;
@@ -27,45 +28,47 @@ function App() {
   };
 
   return (
-    <div className="@container/main winery-app">
+    <>
       <BrowserRouter>
-        <Routes>
-          <Route
-            index
-            element={
-              <WineList
-                wines={wineArray}
-                showOverlay={(imgSrc) => showOverlay(imgSrc)}
-              />
-            }
-          />
-          <Route
-            path="wine/:wineId"
-            element={
-              <Wine
-                wines={wineArray}
-                wineries={wineryArray}
-                showOverlay={(imgSrc) => showOverlay(imgSrc)}
-              />
-            }
-          />
-          <Route
-            path="wineries"
-            element={
-              <WineryList
-                wineries={wineryArray}
-                showOverlay={(imgSrc) => showOverlay(imgSrc)}
-              />
-            }
-          />
-        </Routes>
+        <div className="@container/main winery-app">
+          <Routes>
+            <Route
+              index
+              element={
+                <WineList
+                  wines={wineArray}
+                  showOverlay={(imgSrc) => showOverlay(imgSrc)}
+                />
+              }
+            />
+            <Route
+              path="wine/:wineId"
+              element={
+                <Wine
+                  wines={wineArray}
+                  wineries={wineryArray}
+                  showOverlay={(imgSrc) => showOverlay(imgSrc)}
+                />
+              }
+            />
+            <Route
+              path="wineries"
+              element={
+                <WineryList
+                  wineries={wineryArray}
+                  showOverlay={(imgSrc) => showOverlay(imgSrc)}
+                />
+              }
+            />
+          </Routes>
+        </div>
       </BrowserRouter>
       {overlayImage && (
         <div className="overlay visible" onClick={hideOverlay}>
           <img src={overlayImage} alt="Larger view" />
         </div>
       )}
-    </div>
+    </>
   );
 }
 
