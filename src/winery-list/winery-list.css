@@ -9,11 +9,6 @@
     transition: background-color 0.3s ease, transform 0.2s ease;
     cursor: pointer;
 
-    &:hover {
-      background-color: #d1e0c5;
-      transform: translateY(-1px); /* Adds a slight lift effect */
-    }
-
     &:not(:last-child) {
       margin-bottom: 8px;
     }
@@ -55,13 +50,6 @@
           background-position: center; /* Center the SVG within the div */
           background-repeat: no-repeat; /* Prevent the background from repeating */
         }
-      }
-    }
-
-    .impressions {
-      img {
-        width: 128px;
-        max-height: 50%;
       }
     }
   }

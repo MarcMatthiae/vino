@@ -1,0 +1,33 @@
+.winery {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+
+  .name {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 16px;
+    height: 64px;
+
+    .country {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      .fi {
+        padding: 0;
+        width: 64px; /* Set the width of the circle */
+        height: 64px; /* Set the height equal to the width to make it a circle */
+
+        clip-path: circle(37% at 50% 50%); /* Makes the div circular */
+        background-size: 120%;
+
+        /* Set the SVG as the background image */
+        background-size: contain; /* Ensure the SVG fits inside the circle */
+        background-position: center; /* Center the SVG within the div */
+        background-repeat: no-repeat; /* Prevent the background from repeating */
+      }
+    }
+  }
+}

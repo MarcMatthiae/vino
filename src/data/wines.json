@@ -2,6 +2,7 @@
   "wines": [
     {
       "id": 1,
+      "winery_id": 3,
       "key": "",
       "name": "Golden Mile Marlborough Sauvignon Blanc 2023",
       "bottle_image": "georges-michel.golden-mile.png",
@@ -28,10 +29,30 @@
     },
     {
       "id": 2,
+      "winery_id": 1,
       "key": "",
       "name": "Sauvignon Blanc Ried Pössnitzberg Große STK Alte Reben 2020",
       "bottle_image": "erwin-sabathi.poessnitzberg.png",
-      "description": "Im Duft präsentiert sich eine faszinierende Vielfalt von Aromen. Die zarten rauchigen Nuancen verleihen dem Bukett eine mysteriöse Tiefe, während dezente Hinweise von Wiesenkräutern und ein Hauch von Minze eine frische Seite hinzufügen. Diese Eleganz setzt sich am Gaumen nahtlos fort. Die Aromen sind präzise und kühn, begleitet von einer tiefen Strahlkraft. Der Sauvignon Blanc beeindruckt mit seiner auffälligen mineralischen Präsenz, die für eine bemerkenswerte Komplexität und Tiefe sorgt. "
+      "description": "Im Duft präsentiert sich eine faszinierende Vielfalt von Aromen. Die zarten rauchigen Nuancen verleihen dem Bukett eine mysteriöse Tiefe, während dezente Hinweise von Wiesenkräutern und ein Hauch von Minze eine frische Seite hinzufügen. Diese Eleganz setzt sich am Gaumen nahtlos fort. Die Aromen sind präzise und kühn, begleitet von einer tiefen Strahlkraft. Der Sauvignon Blanc beeindruckt mit seiner auffälligen mineralischen Präsenz, die für eine bemerkenswerte Komplexität und Tiefe sorgt. ",
+      "quickfacts": [
+        {
+          "label": "Jahrgang",
+          "value": "2020"
+        },
+        {
+          "label": "Alkohol",
+          "value": "13 % vol"
+        },
+        {
+          "label": "Säure",
+          "value": "5,3 g/l"
+        },
+        {
+          "label": "Zucker",
+          "value": "1,2 g/l"
+        }
+      ],
+      "year": "2020"
     }
   ]
 }

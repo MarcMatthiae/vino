@@ -1,5 +1,7 @@
 body {
-  @apply bg-stone-400;
+  background-image: url("/assets/grapes-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: Verdana, Geneva, sans-serif;
 
   .winery-app {

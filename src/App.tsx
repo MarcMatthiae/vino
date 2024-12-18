@@ -1,13 +1,16 @@
 import wineData from "./data/wines.json"; // Assuming the file is in `src/`
+import wineryData from "./data/wineries.json"; // Assuming the file is in `src/`
 
 import "./App.css";
 import { useState } from "react";
 import { WineList } from "./wine-list/wine-list";
 import { BrowserRouter, Route, Routes } from "react-router";
 import { Wine } from "./wine/wine";
+import { WineryList } from "./winery-list/winery-list";
 
 function App() {
   const wineArray = wineData.wines;
+  const wineryArray = wineryData.wineries;
   // State to track overlay visibility and image
   const [overlayImage, setOverlayImage] = useState<string | null>();
 
@@ -41,6 +44,16 @@ function App() {
             element={
               <Wine
                 wines={wineArray}
+                wineries={wineryArray}
+                showOverlay={(imgSrc) => showOverlay(imgSrc)}
+              />
+            }
+          />
+          <Route
+            path="wineries"
+            element={
+              <WineryList
+                wineries={wineryArray}
                 showOverlay={(imgSrc) => showOverlay(imgSrc)}
               />
             }
