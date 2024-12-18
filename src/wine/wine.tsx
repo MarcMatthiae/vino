@@ -10,11 +10,11 @@ export interface Wine {
   name: string;
   bottle_image: string;
   description: string;
-  quickfacts: {
+  quickfacts?: {
     label: string;
     value: string;
   }[];
-  year: string;
+  year?: string;
 }
 
 export const Wine = ({ wines, showOverlay }: WineProps) => {
