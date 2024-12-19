@@ -4,7 +4,7 @@ import wineryData from "./data/wineries.json"; // Assuming the file is in `src/`
 import "./App.css";
 import { useState } from "react";
 import { WineList } from "./wine-list/wine-list";
-import { BrowserRouter, Route, Routes } from "react-router";
+import { BrowserRouter, Link, Route, Routes, useNavigate } from "react-router";
 import { Wine } from "./wine/wine";
 import { WineryList } from "./winery-list/winery-list";
 
@@ -29,16 +29,14 @@ function App() {
   return (
     <div className="@container/main winery-app">
       <BrowserRouter>
+        <div className="navigation flex justify-start items-center shadow-2xl z-50 bg-stone-200 py-2 h-20 sticky top-0 box-border">
+          <Link to="/ " className="h-16 flex justify-start items-center gap-2">
+            <img src="/assets/favicon.png" className="h-16 w-16" />
+            <div>Vino</div>
+          </Link>
+        </div>
         <Routes>
-          <Route
-            index
-            element={
-              <WineList
-                wines={wineArray}
-                showOverlay={(imgSrc) => showOverlay(imgSrc)}
-              />
-            }
-          />
+          <Route index element={<WineList wines={wineArray} />} />
           <Route
             path="wine/:wineId"
             element={

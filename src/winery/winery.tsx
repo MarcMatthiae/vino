@@ -35,16 +35,17 @@ export const Winery = ({ winery, wineries, showOverlay }: WineryProps) => {
               {wineryToUse.name}
             </h2>
           </div>
-          <div className="country">
-            <div className={`fi fib fi-${wineryToUse.country}`}></div>
-          </div>
         </div>
-        <div className="impressions mt-16">
+        <div className="impressions mt-16 grid grid-cols-2 gap-2">
           <img
-            className="w-96 object-contain"
+            className="col-span-1 object-contain cursor-pointer transition-transform duration-300 ease-in-out group-hover:scale-105"
             src={"/assets/" + wineryToUse.winery}
             alt={`${wineryToUse.name} winery`}
-            onClick={() => showOverlay("/assets/" + wineryToUse.winery)}
+          />
+          <img
+            className="col-span-1 object-contain cursor-pointer transition-transform duration-300 ease-in-out group-hover:scale-105"
+            src={"/assets/" + wineryToUse.winery}
+            alt={`${wineryToUse.name} winery`}
           />
         </div>
       </div>

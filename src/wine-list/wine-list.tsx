@@ -4,10 +4,9 @@ import "./wine-list.css";
 
 export interface WineListProps {
   wines: Wine[];
-  showOverlay: (imgSrc: string) => void;
 }
 
-export const WineList = ({ wines, showOverlay }: WineListProps) => {
+export const WineList = ({ wines }: WineListProps) => {
   const navigate = useNavigate();
   return (
     <div className="wine-list">
@@ -26,7 +25,6 @@ export const WineList = ({ wines, showOverlay }: WineListProps) => {
                 className="max-h-[200px] h-[200px] object-contain"
                 src={"/assets/" + wine.bottle_image}
                 alt={`${wine.name} wine`}
-                onClick={() => showOverlay("/assets/" + wine.bottle_image)}
               />
             </div>
           </li>
