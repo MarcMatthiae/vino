@@ -4,7 +4,7 @@ import wineryData from "./data/wineries.json"; // Assuming the file is in `src/`
 import "./App.css";
 import { useState } from "react";
 import { WineList } from "./wine-list/wine-list";
-import { BrowserRouter, Link, Route, Routes, useNavigate } from "react-router";
+import { BrowserRouter, Link, Route, Routes } from "react-router";
 import { Wine } from "./wine/wine";
 import { WineryList } from "./winery-list/winery-list";
 

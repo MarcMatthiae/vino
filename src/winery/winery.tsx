@@ -17,7 +17,7 @@ export interface WineryData {
   country_name: string;
 }
 
-export const Winery = ({ winery, wineries, showOverlay }: WineryProps) => {
+export const Winery = ({ winery, wineries }: WineryProps) => {
   const { wineryId = "" } = useParams();
   const wineryToUse =
     winery || wineries?.find((winery) => winery.id === Number(wineryId));
