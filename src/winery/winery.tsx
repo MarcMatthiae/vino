@@ -42,11 +42,6 @@ export const Winery = ({ winery, wineries }: WineryProps) => {
             src={"/assets/" + wineryToUse.winery}
             alt={`${wineryToUse.name} winery`}
           />
-          <img
-            className="col-span-1 object-contain cursor-pointer transition-transform duration-300 ease-in-out group-hover:scale-105"
-            src={"/assets/" + wineryToUse.winery}
-            alt={`${wineryToUse.name} winery`}
-          />
         </div>
       </div>
     )
