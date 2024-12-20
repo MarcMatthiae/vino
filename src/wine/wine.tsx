@@ -1,6 +1,9 @@
 import { useParams } from "react-router";
 import { Winery, WineryData } from "../winery/winery";
 import { CountryLogo } from "../ui-components/country-logo";
+import { Headline } from "../ui-components/headline";
+import { HorizontalList } from "../ui-components/horizontal-list";
+import { useEffect, useState } from "react";
 
 export interface WineProps {
   wines: Wine[];
@@ -20,6 +23,10 @@ export interface Wine {
     value: string;
   }[];
   year?: string;
+  vinification?: string[];
+  tastes?: string[];
+  besonderheiten?: string[];
+  besonderheiten_anbaugebiet?: string[];
 }
 
 export const Wine = ({ wines, wineries, showOverlay }: WineProps) => {
@@ -51,9 +58,9 @@ export const Wine = ({ wines, wineries, showOverlay }: WineProps) => {
               </h2>
             </div>
           </div>
-          <div className="flex flex-col justify-start items-start col-span-9">
-            <p className="text-left text-[16px]  mb-4">{wine.description}</p>
-            <ul className="@[1024px]/main:w-2/5 w-4/5">
+          <div className="flex flex-col justify-start items-start col-span-9 gap-4">
+            <p className="text-left text-[16px]">{wine.description}</p>
+            <ul className="w-4/5">
               {wine.quickfacts?.map((quickfact) => {
                 return (
                   <li className="grid grid-cols-12 border-b border-stone-700 p-4">
@@ -66,6 +73,34 @@ export const Wine = ({ wines, wineries, showOverlay }: WineProps) => {
                   </li>
                 );
               })}
+              <li className="grid grid-cols-12 border-b border-stone-700 p-4">
+                <div className="col-span-3 font-bold">Vinifikation</div>
+                <div className="col-span-9 text-right">
+                  <HorizontalList items={wine.vinification}></HorizontalList>
+                </div>
+              </li>
+              <li className="grid grid-cols-12 border-b border-stone-700 p-4">
+                <div className="col-span-3 font-bold">Geschmack</div>
+                <div className="col-span-9 text-right">
+                  <HorizontalList items={wine.tastes}></HorizontalList>
+                </div>
+              </li>
+              <li className="grid grid-cols-12 border-b border-stone-700 p-4">
+                <div className="col-span-3 font-bold">Besonderheiten</div>
+                <div className="col-span-9 text-right">
+                  <HorizontalList items={wine.besonderheiten}></HorizontalList>
+                </div>
+              </li>
+              <li className="grid grid-cols-12 border-b border-stone-700 p-4">
+                <div className="col-span-3 font-bold">
+                  Besonderheiten Anbaugebiet
+                </div>
+                <div className="col-span-9 text-right">
+                  <HorizontalList
+                    items={wine.besonderheiten_anbaugebiet}
+                  ></HorizontalList>
+                </div>
+              </li>
             </ul>
           </div>
 

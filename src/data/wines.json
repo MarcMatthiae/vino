@@ -2,20 +2,20 @@
   "wines": [
     {
       "id": 1,
-      "winery_id": 3,
+      "winery_id": 1,
       "key": "",
       "name": "Golden Mile Marlborough Sauvignon Blanc 2023",
-      "bottle_image": "georges-michel.golden-mile.png",
-      "background_image": "georges-michel.golden-mile.bg.jpg",
+      "bottle_image": "golden-mile-marlborough.png",
+      "background_image": "golden-mile-marlborough.bg.jpg",
       "description": "Neuseeland im Glas: Von hellgelber Farbe mit leicht grünlichen Reflexen offenbart der ‚Golden Mile‘ im Duft Aromen von exotischen Früchten, Kräutern und Stachelbeeren sowie florale und pflanzlich-grüne Anklänge. Am Gaumen zeigt sich der Sauvignon Blanc saftig, frisch und nachhaltig mit Noten von gelben und grünen Früchten sowie zarten Nuancen von dunklen Beeren, pflanzlicher Würze, lebhafter Säure, feiner Mineralität und harmonischem Abgang. Mit herrlich animierendem Trinkfluss als Solist und ein außerordentlich guter Begleiter zu Fisch, Meeresfrüchten und gegartem Gemüse.",
       "quickfacts": [
         {
           "label": "Jahrgang",
-          "value": "2022"
+          "value": "2023"
         },
         {
           "label": "Alkohol",
-          "value": "12,5 % vol"
+          "value": "13,5 % vol"
         },
         {
           "label": "Säure",
@@ -26,16 +26,40 @@
           "value": "5,4 g/l"
         }
       ],
-      "year": "2022"
+      "vinification": [
+        "Maritime Brise",
+        "Schonend vinifiziert",
+        "Ohne Holzeinsatz"
+      ],
+      "tastes": [
+        "Kiwi",
+        "Maracuja",
+        "Ananas",
+        "Litschi",
+        "Limetten",
+        "Kräuterwürze",
+        "Frisch gemähtes Gras"
+      ],
+      "besonderheiten": [
+        "Exotische Früchte",
+        "Frisch und nachhaltig",
+        "Lebhafte Säure"
+      ],
+      "besonderheiten_anbaugebiet": [
+        "Maritime Einflüsse",
+        "Ideale Bedingungen für Sauvignon Blanc"
+      ],
+      "ort": "Neuseeland",
+      "year": "2023"
     },
     {
       "id": 2,
-      "winery_id": 1,
+      "winery_id": 2,
       "key": "",
-      "name": "Sauvignon Blanc Ried Pössnitzberg Große STK Alte Reben 2020",
-      "bottle_image": "erwin-sabathi.poessnitzberg.png",
-      "background_image": "erwin-sabathi.poessnitzberg.bg.jpg",
-      "description": "Im Duft präsentiert sich eine faszinierende Vielfalt von Aromen. Die zarten rauchigen Nuancen verleihen dem Bukett eine mysteriöse Tiefe, während dezente Hinweise von Wiesenkräutern und ein Hauch von Minze eine frische Seite hinzufügen. Diese Eleganz setzt sich am Gaumen nahtlos fort. Die Aromen sind präzise und kühn, begleitet von einer tiefen Strahlkraft. Der Sauvignon Blanc beeindruckt mit seiner auffälligen mineralischen Präsenz, die für eine bemerkenswerte Komplexität und Tiefe sorgt. ",
+      "name": "Sauvignon Blanc Ried Pössnitzberg 2020",
+      "bottle_image": "ried-poessnitzberg.png",
+      "background_image": "ried-poessnitzberg.bg.jpg",
+      "description": "Im Duft präsentiert sich eine faszinierende Vielfalt von Aromen. Die zarten rauchigen Nuancen verleihen dem Bukett eine mysteriöse Tiefe, während dezente Hinweise von Wiesenkräutern und ein Hauch von Minze eine frische Seite hinzufügen. Diese Eleganz setzt sich am Gaumen nahtlos fort. Die Aromen sind präzise und kühn, begleitet von einer tiefen Strahlkraft. Der Sauvignon Blanc beeindruckt mit seiner auffälligen mineralischen Präsenz, die für eine bemerkenswerte Komplexität und Tiefe sorgt.",
       "quickfacts": [
         {
           "label": "Jahrgang",
@@ -43,18 +67,208 @@
         },
         {
           "label": "Alkohol",
-          "value": "13 % vol"
+          "value": "13,0 % vol"
         },
         {
           "label": "Säure",
-          "value": "5,3 g/l"
+          "value": "6,2 g/l"
         },
         {
           "label": "Zucker",
-          "value": "1,2 g/l"
+          "value": "1,5 g/l"
         }
       ],
+      "vinification": [
+        "Von Hand gelesen",
+        "Traditionell mit Naturhefen vergoren",
+        "24 Monate in traditionellen Eichenholzfässern"
+      ],
+      "tastes": ["Akazienblüte", "Mandarine", "Johannisbeere"],
+      "besonderheiten": [
+        "Rauchige Nuancen",
+        "Eleganter, mineralischer Körper",
+        "Komplexität und Tiefe"
+      ],
+      "besonderheiten_anbaugebiet": [
+        "Bodenstruktur und klimatische Faktoren",
+        "Ernteertrag auf max. 45 hl limitiert"
+      ],
+      "ort": "Südsteiermark",
       "year": "2020"
+    },
+    {
+      "id": 3,
+      "winery_id": 3,
+      "key": "",
+      "name": "Sand&Schotter Sauvignon Blanc 2023",
+      "bottle_image": "sand-schotter.png",
+      "background_image": "sand-schotter.bg.jpg",
+      "description": "Ein frischer Sauvignon Blanc mit Aromen von Cassis, Zitrusfrüchten, Kräutern, Paprika und einer leichten Note von Gras. Der Wein ist lebendig und ausdrucksstark mit einem klaren, frischen Finish.",
+      "quickfacts": [
+        {
+          "label": "Jahrgang",
+          "value": "2023"
+        },
+        {
+          "label": "Alkohol",
+          "value": "12,0 % vol"
+        },
+        {
+          "label": "Säure",
+          "value": "6,0 g/l"
+        },
+        {
+          "label": "Zucker",
+          "value": "2,0 g/l"
+        }
+      ],
+      "vinification": ["Von Hand gelesen", "Edelstahltank"],
+      "tastes": ["Cassis", "Zitrus", "Kräuter", "Paprika", "Buchsbaum", "Gras"],
+      "besonderheiten": [
+        "Frischer Geschmack",
+        "Lebendig und ausdrucksstark",
+        "Klarer, frischer Abgang"
+      ],
+      "besonderheiten_anbaugebiet": [
+        "Günstige Böden für Sauvignon Blanc",
+        "Optimale klimatische Bedingungen"
+      ],
+      "ort": "Südsteiermark",
+      "year": "2023"
+    },
+    {
+      "id": 4,
+      "winery_id": 4,
+      "key": "",
+      "name": "Amayna Sauvignon Blanc 2023",
+      "bottle_image": "amayna.png",
+      "background_image": "amayna.bg.jpg",
+      "description": "Ein cremiger und saftiger Sauvignon Blanc aus dem Leyda Valley in Chile. Der Wein zeigt Aromen von Limette, weißem Pfirsich, Ananas, mineralischen Noten und Kräutern, mit einer ausgewogenen Säure und einem salzigen Finish.",
+      "quickfacts": [
+        {
+          "label": "Jahrgang",
+          "value": "2023"
+        },
+        {
+          "label": "Alkohol",
+          "value": "14,0 % vol"
+        },
+        {
+          "label": "Säure",
+          "value": "6,5 g/l"
+        },
+        {
+          "label": "Zucker",
+          "value": "1,1 g/l"
+        }
+      ],
+      "vinification": [
+        "Handlese",
+        "Kurze Maischestandzeit",
+        "Ganztraubenpressung",
+        "Vergärung und Ausbau in Edelstahl"
+      ],
+      "tastes": [
+        "Limette",
+        "Weißer Pfirsich",
+        "Ananas",
+        "Mineralische Noten",
+        "Kräuter",
+        "Ausgewogene Säure",
+        "Salzig"
+      ],
+      "besonderheiten": [
+        "Cremig und saftig",
+        "Mineralische Noten",
+        "Leichte Pfeffrigkeit"
+      ],
+      "besonderheiten_anbaugebiet": [
+        "Kalte und späte Ernte",
+        "10 km vom Meer entfernt"
+      ],
+      "ort": "Leyda Valley (Burgund Chiles)",
+      "year": "2023"
+    },
+    {
+      "id": 5,
+      "winery_id": 5,
+      "key": "",
+      "name": "Gamlitz Sauvignon Blanc 2022",
+      "bottle_image": "gamlitz.png",
+      "background_image": "gamlitz.bg.jpg",
+      "description": "Der Gamlitz Sauvignon Blanc zeigt eine ausgewogene Mischung von Paprika und Holunder, mit einer frischen und klaren Struktur. Der Wein wird durch seine dezente Säure und ein frisches Finish geprägt.",
+      "quickfacts": [
+        {
+          "label": "Jahrgang",
+          "value": "2022"
+        },
+        {
+          "label": "Alkohol",
+          "value": "13,5 % vol"
+        },
+        {
+          "label": "Säure",
+          "value": "6,2 g/l"
+        },
+        {
+          "label": "Zucker",
+          "value": "1,5 g/l"
+        }
+      ],
+      "vinification": [
+        "Handlese",
+        "5 bis 10 Stunden Mazeration",
+        "Spontanvergärung im Stahltank",
+        "6-9 Monate auf Feinhefe"
+      ],
+      "tastes": ["Paprika", "Holunder"],
+      "besonderheiten": [
+        "Frische Struktur",
+        "Dezente Säure",
+        "Klarer und frischer Abgang"
+      ],
+      "besonderheiten_anbaugebiet": [
+        "Ernte nach optimaler Reife",
+        "Traditionelle Anbaumethoden"
+      ],
+      "ort": "Südsteiermark",
+      "year": "2022"
+    },
+    {
+      "id": 6,
+      "winery_id": 6,
+      "key": "",
+      "name": "Rotschiefer Sauvignon Blanc 2023",
+      "bottle_image": "rotschiefer.png",
+      "background_image": "rotschiefer.bg.jpg",
+      "description": "Ein Sauvignon Blanc mit salzig-mineralischer Note und Aromen reifer Zitrusfrüchte. Der Wein bietet einen cremigen Schmelz und eine harmonische Balance zwischen Frische und Struktur.",
+      "quickfacts": [
+        {
+          "label": "Jahrgang",
+          "value": "2023"
+        },
+        {
+          "label": "Alkohol",
+          "value": "12,0 % vol"
+        },
+        {
+          "label": "Säure",
+          "value": "6,4 g/l"
+        },
+        {
+          "label": "Zucker",
+          "value": "1,4 g/l"
+        }
+      ],
+      "vinification": ["Von Hand gelesen", "Kurze Zeit auf der Feinhefe"],
+      "tastes": ["Reife Zitrusfrüchte"],
+      "besonderheiten": ["Salzig-mineralisch", "Cremiger Schmelz"],
+      "besonderheiten_anbaugebiet": [
+        "Kitzek und Südsteiermark",
+        "Optimale Klimabedingungen"
+      ],
+      "ort": "Südsteiermark/Kitzek",
+      "year": "2023"
     }
   ]
 }

@@ -36,7 +36,7 @@ export const Gallery = ({ images }: GalleryProps) => {
 
   return (
     <div className="@[1024px]/main:w-11/12 w-full bg-stone-200 bg-opacity-75 p-4 list-none flex flex-col shadow-slate-500 shadow-sm rounded-md m-auto">
-      <Headline title="Impressionen"></Headline>
+      <Headline>Impressionen</Headline>
       <div className="flex items-center justify-center gap-4 mt-6">
         {images?.map((image, index) => (
           <div className="" key={index} onClick={() => openModal(index)}>
