@@ -5,7 +5,7 @@
       "key": "",
       "name": "Erwin Sabathi",
       "logo": "erwin-sabathi.logo.png",
-      "winery": "erwin-sabathi.winery.jpg",
+      "impressions": [{ "src": "erwin-sabathi.winery.jpg", "alt": "winery" }],
       "country": "at",
       "country_name": "Österreich"
     },
@@ -14,7 +14,7 @@
       "key": "",
       "name": "Viña Garcés Silva",
       "logo": "garces-silva.logo.png",
-      "winery": "garces-silva.winery.jpg",
+      "impressions": [{ "src": "garces-silva.winery.jpg", "alt": "winery" }],
       "country": "cl",
       "country_name": "Chile"
     },
@@ -23,7 +23,10 @@
       "key": "",
       "name": "Georges Michel Estate Wines",
       "logo": "georges-michel.logo.png",
-      "winery": "georges-michel.winery.jpg",
+      "impressions": [
+        { "src": "georges-michel.winery.jpg", "alt": "winery" },
+        { "src": "garces-silva.winery.jpg", "alt": "winery" }
+      ],
       "country": "nz",
       "country_name": "Neuseeland"
     }

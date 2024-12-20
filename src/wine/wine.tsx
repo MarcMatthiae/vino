@@ -28,6 +28,7 @@ export const Wine = ({ wines, wineries, showOverlay }: WineProps) => {
   const winery = wineries.find(
     (winery) => winery.id === Number(wine?.winery_id)
   );
+
   return (
     wine && (
       <div

@@ -29,7 +29,7 @@ function App() {
   return (
     <div className="@container/main winery-app">
       <BrowserRouter>
-        <div className="navigation flex justify-start items-center shadow-2xl z-50 bg-stone-200 py-2 h-20 sticky top-0 box-border">
+        <div className="navigation @[1024px]/main:px-16 flex justify-start items-center shadow-2xl z-50 bg-stone-200 py-2 h-20 sticky top-0 box-border">
           <Link to="/ " className="h-16 flex justify-start items-center gap-2">
             <img src="/assets/favicon.png" className="h-16 w-16" />
             <div>Vino</div>
