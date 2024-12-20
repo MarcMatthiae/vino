@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Image } from "./model";
 
 export interface ImageModalProps {
@@ -16,13 +16,38 @@ export const ImageModal = ({
   nextImage,
   prevImage,
 }: ImageModalProps) => {
+  const scrollPositionRef = useRef(0);
+
+  useEffect(() => {
+    if (isOpen) {
+      // Save the current scroll position
+      scrollPositionRef.current = window.scrollY;
+
+      // Prevent background scrolling
+      document.body.style.position = "fixed";
+      document.body.style.width = "100%";
+    } else {
+      // Restore scroll position after modal closes
+      document.body.style.position = "";
+      document.body.style.top = "";
+
+      // Restore the scroll position using the saved value in the ref
+      window.scrollTo(0, scrollPositionRef.current);
+    }
+
+    // Cleanup when the component unmounts
+    return () => {
+      document.body.style.position = "";
+      document.body.style.top = "";
+    };
+  }, [isOpen]);
+
   if (!isOpen) return null; // Don't render the modal if it's not open
 
   return (
     image && (
       <div
-        className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50 overflow-auto h-lvh"
-        //style={{ top: `${window.scrollY}px` }}
+        className="absolute inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50 overflow-auto h-lvh"
         onClick={onClose}
       >
         <img
