@@ -21,7 +21,8 @@ export const ImageModal = ({
   return (
     image && (
       <div
-        className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50 overflow-auto"
+        className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50 overflow-auto h-lvh"
+        //style={{ top: `${window.scrollY}px` }}
         onClick={onClose}
       >
         <img
