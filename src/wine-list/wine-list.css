@@ -2,6 +2,7 @@
   background-image: url("/assets/grapes-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 75% 25%;
   padding: 32px 8px;
   width: 100%;
   height: 100%;
