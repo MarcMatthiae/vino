@@ -7,7 +7,9 @@
       "logo": "erwin-sabathi.logo.png",
       "impressions": [{ "src": "erwin-sabathi.winery.jpg", "alt": "winery" }],
       "country": "at",
-      "country_name": "Österreich"
+      "country_name": "Österreich",
+      "founded": "50er Jahre",
+      "details": "Gründung durch den Großvater, Führung durch Sohn und Schwiegertochter"
     },
     {
       "id": 2,
@@ -16,7 +18,8 @@
       "logo": "garces-silva.logo.png",
       "impressions": [{ "src": "garces-silva.winery.jpg", "alt": "winery" }],
       "country": "cl",
-      "country_name": "Chile"
+      "country_name": "Chile",
+      "details": "Experten in \"cold-climate wines\""
     },
     {
       "id": 3,
@@ -28,7 +31,39 @@
         { "src": "garces-silva.winery.jpg", "alt": "winery" }
       ],
       "country": "nz",
-      "country_name": "Neuseeland"
+      "country_name": "Neuseeland",
+      "founded": "1997",
+      "details": "Tochter und Vater führen das Unternehmen, viel Wert auf Nachhaltigkeit"
+    },
+    {
+      "id": 4,
+      "key": "",
+      "name": "Peter Skoff",
+      "country": "at",
+      "country_name": "Österreich",
+      "location": "Gamlitz"
+    },
+    {
+      "id": 5,
+      "key": "",
+      "country": "at",
+      "country_name": "Österreich",
+      "name": "Hannes Sabathi"
+    },
+    {
+      "id": 6,
+      "key": "",
+      "name": "Schauer"
+    },
+    {
+      "id": 7,
+      "key": "",
+      "name": "Leider Geil"
+    },
+    {
+      "id": 8,
+      "key": "",
+      "name": "Eugen Müller"
     }
   ]
 }

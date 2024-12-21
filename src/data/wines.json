@@ -2,7 +2,7 @@
   "wines": [
     {
       "id": 1,
-      "winery_id": 1,
+      "winery_id": 3,
       "key": "",
       "name": "Golden Mile Marlborough Sauvignon Blanc 2023",
       "bottle_image": "golden-mile-marlborough.png",
@@ -54,7 +54,7 @@
     },
     {
       "id": 2,
-      "winery_id": 2,
+      "winery_id": 1,
       "key": "",
       "name": "Sauvignon Blanc Ried Pössnitzberg 2020",
       "bottle_image": "ried-poessnitzberg.png",
@@ -98,7 +98,7 @@
     },
     {
       "id": 3,
-      "winery_id": 3,
+      "winery_id": null,
       "key": "",
       "name": "Sand&Schotter Sauvignon Blanc 2023",
       "bottle_image": "sand-schotter.png",
@@ -138,7 +138,7 @@
     },
     {
       "id": 4,
-      "winery_id": 4,
+      "winery_id": 2,
       "key": "",
       "name": "Amayna Sauvignon Blanc 2023",
       "bottle_image": "amayna.png",
@@ -236,7 +236,7 @@
     },
     {
       "id": 6,
-      "winery_id": 6,
+      "winery_id": null,
       "key": "",
       "name": "Rotschiefer Sauvignon Blanc 2023",
       "bottle_image": "rotschiefer.png",
@@ -268,6 +268,78 @@
         "Optimale Klimabedingungen"
       ],
       "ort": "Südsteiermark/Kitzek",
+      "year": "2023"
+    },
+    {
+      "id": 7,
+      "winery_id": null,
+      "key": "",
+      "name": "Fumé 2023",
+      "description": "Ein Wein aus der Pfalz, 70 % in neuen Tonneaux und 30 % im großen Holzfass ausgebaut. Nach 6 Monaten auf der Vollhefe abgefüllt. Bietet Aromen von Cassis, Kräuterwürze, Ananas und Maracuja mit einer dezenten Holznote. Am Gaumen zeigt sich eine Feuerstein-Note, reife Säure und eine spannende Komplexität.",
+      "quickfacts": [
+        {
+          "label": "Jahrgang",
+          "value": "2023"
+        },
+        {
+          "label": "Alkohol",
+          "value": "13,0 % vol"
+        },
+        {
+          "label": "Säure",
+          "value": "5,8 g/l"
+        },
+        {
+          "label": "Zucker",
+          "value": "2,0 g/l"
+        }
+      ],
+      "vinification": ["Handlese", "Vergärung und Reifung im Holzfass"],
+      "tastes": ["Cassis", "Kräuterwürze", "Ananas", "Maracuja", "Feuerstein"],
+      "besonderheiten": [
+        "Dezente Holznote",
+        "Feuerstein-Note",
+        "Spannende Komplexität"
+      ],
+      "besonderheiten_anbaugebiet": [
+        "Pfalz",
+        "Ideales Klima für Sauvignon Blanc"
+      ],
+      "ort": "Pfalz",
+      "year": "2023"
+    },
+    {
+      "id": 8,
+      "winery_id": null,
+      "key": "",
+      "name": "Leidenschaft 2023",
+      "description": "Ein eleganter Sauvignon Blanc aus der Pfalz mit Ausbau im kleinen Holzfass. Der Wein vereint Aromen von Maracuja und Stachelbeere, gepaart mit einer lebhaften Säure und einer harmonischen Balance.",
+      "quickfacts": [
+        {
+          "label": "Jahrgang",
+          "value": "2023"
+        },
+        {
+          "label": "Alkohol",
+          "value": "12,5 % vol"
+        },
+        {
+          "label": "Säure",
+          "value": "6,9 g/l"
+        },
+        {
+          "label": "Zucker",
+          "value": "6,9 g/l"
+        }
+      ],
+      "vinification": ["Ausbau im kleinen Holzfass"],
+      "tastes": ["Maracuja", "Stachelbeere"],
+      "besonderheiten": ["Lebhafte Säure", "Harmonische Balance"],
+      "besonderheiten_anbaugebiet": [
+        "Pfalz",
+        "Optimale Bedingungen für Sauvignon Blanc"
+      ],
+      "ort": "Pfalz",
       "year": "2023"
     }
   ]
