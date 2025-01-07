@@ -2,6 +2,7 @@ import { useParams } from "react-router";
 import { Winery, WineryData } from "../winery/winery";
 import { CountryLogo } from "../ui-components/country-logo";
 import { HorizontalList } from "../ui-components/horizontal-list";
+import { useState } from "react";
 
 export interface WineProps {
   wines: Wine[];
@@ -34,9 +35,16 @@ export const Wine = ({ wines, wineries, showOverlay }: WineProps) => {
   const winery = wineries.find(
     (winery) => winery.id === Number(wine?.winery_id)
   );
+
+  const [tastesVisible, setTastesVisible] = useState(false);
+
   const backgroundImagePath = wine?.background_image
     ? "/assets/wines/" + wine?.key + "/" + wine.background_image
     : "/assets/grapes-background.jpg";
+
+  const handleOnClick = () => {
+    setTastesVisible((prevState) => !prevState);
+  };
 
   return (
     wine && (
@@ -76,9 +84,31 @@ export const Wine = ({ wines, wineries, showOverlay }: WineProps) => {
               </li>
               <li className="grid grid-cols-12 border-b border-stone-700 p-4">
                 <div className="col-span-3 font-bold">Geschmack</div>
-                <div className="col-span-9 text-right">
-                  <HorizontalList items={wine.tastes}></HorizontalList>
-                </div>
+                {tastesVisible ? (
+                  <div className="col-span-9 flex gap-3 justify-end items-center">
+                    <button
+                      className="bg-orange-200 p-2 rounded-md border-stone-700 border"
+                      onClick={() => handleOnClick()}
+                    >
+                      Ausblenden
+                    </button>
+                    <HorizontalList items={wine.tastes}></HorizontalList>
+                  </div>
+                ) : (
+                  <div className="col-span-9 flex gap-3 justify-end  items-center">
+                    <button
+                      className="bg-emerald-300 p-2 rounded-md border-stone-700 border"
+                      onClick={() => handleOnClick()}
+                    >
+                      Anzeigen ({wine.tastes?.length})
+                    </button>
+                    {[...Array(wine.tastes?.length).keys()]?.map((index) => {
+                      return (
+                        <img className="h-8" src="/assets/favicon.png"></img>
+                      );
+                    })}
+                  </div>
+                )}
               </li>
               <li className="grid grid-cols-12 border-b border-stone-700 p-4">
                 <div className="col-span-3 font-bold">Besonderheiten</div>
