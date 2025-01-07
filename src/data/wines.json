@@ -3,10 +3,10 @@
     {
       "id": 1,
       "winery_id": 3,
-      "key": "",
+      "key": "golden-mile",
       "name": "Golden Mile Marlborough Sauvignon Blanc 2023",
       "bottle_image": "golden-mile-marlborough.png",
-      "background_image": "golden-mile-marlborough.bg.jpg",
+      "background_image": "background.jpg",
       "description": "Neuseeland im Glas: Von hellgelber Farbe mit leicht grünlichen Reflexen offenbart der ‚Golden Mile‘ im Duft Aromen von exotischen Früchten, Kräutern und Stachelbeeren sowie florale und pflanzlich-grüne Anklänge. Am Gaumen zeigt sich der Sauvignon Blanc saftig, frisch und nachhaltig mit Noten von gelben und grünen Früchten sowie zarten Nuancen von dunklen Beeren, pflanzlicher Würze, lebhafter Säure, feiner Mineralität und harmonischem Abgang. Mit herrlich animierendem Trinkfluss als Solist und ein außerordentlich guter Begleiter zu Fisch, Meeresfrüchten und gegartem Gemüse.",
       "quickfacts": [
         {
@@ -55,10 +55,10 @@
     {
       "id": 2,
       "winery_id": 1,
-      "key": "",
+      "key": "poessnitzberg",
       "name": "Sauvignon Blanc Ried Pössnitzberg 2020",
       "bottle_image": "ried-poessnitzberg.png",
-      "background_image": "ried-poessnitzberg.bg.jpg",
+      "background_image": "background.jpg",
       "description": "Im Duft präsentiert sich eine faszinierende Vielfalt von Aromen. Die zarten rauchigen Nuancen verleihen dem Bukett eine mysteriöse Tiefe, während dezente Hinweise von Wiesenkräutern und ein Hauch von Minze eine frische Seite hinzufügen. Diese Eleganz setzt sich am Gaumen nahtlos fort. Die Aromen sind präzise und kühn, begleitet von einer tiefen Strahlkraft. Der Sauvignon Blanc beeindruckt mit seiner auffälligen mineralischen Präsenz, die für eine bemerkenswerte Komplexität und Tiefe sorgt.",
       "quickfacts": [
         {
@@ -98,8 +98,8 @@
     },
     {
       "id": 3,
-      "winery_id": null,
-      "key": "",
+      "winery_id": 4,
+      "key": "sand-schotter",
       "name": "Sand&Schotter Sauvignon Blanc 2023",
       "bottle_image": "sand-schotter.png",
       "background_image": "sand-schotter.bg.jpg",
@@ -139,7 +139,7 @@
     {
       "id": 4,
       "winery_id": 2,
-      "key": "",
+      "key": "amayna",
       "name": "Amayna Sauvignon Blanc 2023",
       "bottle_image": "amayna.png",
       "background_image": "amayna.bg.jpg",
@@ -192,7 +192,7 @@
     {
       "id": 5,
       "winery_id": 5,
-      "key": "",
+      "key": "gamlitz",
       "name": "Gamlitz Sauvignon Blanc 2022",
       "bottle_image": "gamlitz.png",
       "background_image": "gamlitz.bg.jpg",
@@ -236,8 +236,8 @@
     },
     {
       "id": 6,
-      "winery_id": null,
-      "key": "",
+      "winery_id": 6,
+      "key": "rotschiefer",
       "name": "Rotschiefer Sauvignon Blanc 2023",
       "bottle_image": "rotschiefer.png",
       "background_image": "rotschiefer.bg.jpg",
@@ -272,9 +272,10 @@
     },
     {
       "id": 7,
-      "winery_id": null,
-      "key": "",
+      "winery_id": 7,
+      "key": "fume",
       "name": "Fumé 2023",
+      "bottle_image": "fume.png",
       "description": "Ein Wein aus der Pfalz, 70 % in neuen Tonneaux und 30 % im großen Holzfass ausgebaut. Nach 6 Monaten auf der Vollhefe abgefüllt. Bietet Aromen von Cassis, Kräuterwürze, Ananas und Maracuja mit einer dezenten Holznote. Am Gaumen zeigt sich eine Feuerstein-Note, reife Säure und eine spannende Komplexität.",
       "quickfacts": [
         {
@@ -310,9 +311,11 @@
     },
     {
       "id": 8,
-      "winery_id": null,
-      "key": "",
+      "winery_id": 8,
+      "key": "leidenschaft",
       "name": "Leidenschaft 2023",
+      "bottle_image": "leidenschaft.png",
+      "background_image": "background.jpg",
       "description": "Ein eleganter Sauvignon Blanc aus der Pfalz mit Ausbau im kleinen Holzfass. Der Wein vereint Aromen von Maracuja und Stachelbeere, gepaart mit einer lebhaften Säure und einer harmonischen Balance.",
       "quickfacts": [
         {

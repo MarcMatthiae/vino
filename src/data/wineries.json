@@ -2,10 +2,15 @@
   "wineries": [
     {
       "id": 1,
-      "key": "",
+      "key": "erwin-sabathi",
       "name": "Erwin Sabathi",
-      "logo": "erwin-sabathi.logo.png",
-      "impressions": [{ "src": "erwin-sabathi.winery.jpg", "alt": "winery" }],
+      "logo": "logo.png",
+      "map_image": "map.png",
+      "impressions": [
+        { "src": "winery.jpg", "alt": "winery" },
+        { "src": "panorama.jpg", "alt": "panorama" },
+        { "src": "rieden.jpg", "alt": "rieden" }
+      ],
       "country": "at",
       "country_name": "Österreich",
       "founded": "50er Jahre",
@@ -13,22 +18,27 @@
     },
     {
       "id": 2,
-      "key": "",
+      "key": "garces-silva",
       "name": "Viña Garcés Silva",
-      "logo": "garces-silva.logo.png",
-      "impressions": [{ "src": "garces-silva.winery.jpg", "alt": "winery" }],
+      "logo": "logo.png",
+      "map_image": "map.png",
+      "impressions": [
+        { "src": "winery.jpg", "alt": "winery" },
+        { "src": "geography.jpg", "alt": "geography" }
+      ],
       "country": "cl",
       "country_name": "Chile",
       "details": "Experten in \"cold-climate wines\""
     },
     {
       "id": 3,
-      "key": "",
+      "key": "georges-michel",
+      "map_image": "map.png",
       "name": "Georges Michel Estate Wines",
-      "logo": "georges-michel.logo.png",
+      "logo": "logo.png",
       "impressions": [
-        { "src": "georges-michel.winery.jpg", "alt": "winery" },
-        { "src": "garces-silva.winery.jpg", "alt": "winery" }
+        { "src": "winery.jpg", "alt": "winery" },
+        { "src": "panorama.jpg", "alt": "winery" }
       ],
       "country": "nz",
       "country_name": "Neuseeland",
@@ -37,32 +47,65 @@
     },
     {
       "id": 4,
-      "key": "",
+      "key": "peter-skoff",
       "name": "Peter Skoff",
+      "map_image": "map.png",
+      "impressions": [
+        { "src": "guys.jpg", "alt": "guys" },
+        { "src": "1.jpg", "alt": "1" },
+        { "src": "2.jpg", "alt": "2" }
+      ],
+      "logo": "logo.png",
       "country": "at",
       "country_name": "Österreich",
       "location": "Gamlitz"
     },
     {
       "id": 5,
-      "key": "",
+      "key": "hannes-sabathi",
+      "logo": "logo.svg",
+      "map_image": "map.png",
+      "impressions": [
+        { "src": "panorama.jpg", "alt": "1" },
+        { "src": "winery.jpg", "alt": "2" }
+      ],
       "country": "at",
       "country_name": "Österreich",
       "name": "Hannes Sabathi"
     },
     {
       "id": 6,
-      "key": "",
+      "key": "schauer",
+      "logo": "logo.png",
+      "map_image": "map.png",
+      "impressions": [
+        { "src": "guys.jpg", "alt": "guys" },
+        { "src": "panorama.png", "alt": "panorama" },
+        { "src": "winery.jpg", "alt": "winery" },
+        { "src": "riedenweine.png", "alt": "1" }
+      ],
+      "country": "at",
+      "country_name": "Österreich",
       "name": "Schauer"
     },
     {
       "id": 7,
-      "key": "",
+      "key": "leider-geil",
+      "country": "de",
+      "country_name": "Deutschland",
       "name": "Leider Geil"
     },
     {
       "id": 8,
-      "key": "",
+      "key": "eugen-mueller",
+      "map_image": "lage.png",
+      "country": "de",
+      "country_name": "Deutschland",
+      "impressions": [
+        { "src": "fun.jpg", "alt": "winery" },
+        { "src": "forst.jpg", "alt": "Forst" }
+      ],
+      "logo": "logo.png",
       "name": "Eugen Müller"
     }
   ]

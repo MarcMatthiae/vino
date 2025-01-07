@@ -23,7 +23,7 @@ export const WineList = ({ wines }: WineListProps) => {
             <div className="col-span-3 flex justify-end">
               <img
                 className="max-h-[200px] h-[200px] object-contain"
-                src={"/assets/" + wine.bottle_image}
+                src={"/assets/wines/" + wine.key + "/bottle.png"}
                 alt={`${wine.name} wine`}
               />
             </div>

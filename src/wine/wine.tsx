@@ -1,9 +1,7 @@
 import { useParams } from "react-router";
 import { Winery, WineryData } from "../winery/winery";
 import { CountryLogo } from "../ui-components/country-logo";
-import { Headline } from "../ui-components/headline";
 import { HorizontalList } from "../ui-components/horizontal-list";
-import { useEffect, useState } from "react";
 
 export interface WineProps {
   wines: Wine[];
@@ -13,6 +11,7 @@ export interface WineProps {
 
 export interface Wine {
   id: number;
+  key: string;
   winery_id: number;
   name: string;
   bottle_image: string;
@@ -35,14 +34,15 @@ export const Wine = ({ wines, wineries, showOverlay }: WineProps) => {
   const winery = wineries.find(
     (winery) => winery.id === Number(wine?.winery_id)
   );
+  const backgroundImagePath = wine?.background_image
+    ? "/assets/wines/" + wine?.key + "/" + wine.background_image
+    : "/assets/grapes-background.jpg";
 
   return (
     wine && (
       <div
         style={{
-          backgroundImage: `url('/assets/${
-            wine.background_image || "grapes-background.jpg"
-          }')`,
+          backgroundImage: `url('${backgroundImagePath}')`,
         }}
         className="wine-portrait bg-repeat bg-cover w-full h-full px-2 py-8 min-h-dvh"
       >
@@ -107,7 +107,7 @@ export const Wine = ({ wines, wineries, showOverlay }: WineProps) => {
           <div className="col-span-3 flex justify-center">
             <img
               className="max-h-[800px] h-[800px] object-contain col-span-3"
-              src={"/assets/" + wine.bottle_image}
+              src={"/assets/wines/" + wine.key + "/bottle.png"}
               alt={`${wine.name} wine`}
             />
           </div>
