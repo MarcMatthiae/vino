@@ -102,7 +102,6 @@
       "key": "sand-schotter",
       "name": "Sand&Schotter Sauvignon Blanc 2023",
       "bottle_image": "sand-schotter.png",
-      "background_image": "sand-schotter.bg.jpg",
       "description": "Ein frischer Sauvignon Blanc mit Aromen von Cassis, Zitrusfrüchten, Kräutern, Paprika und einer leichten Note von Gras. Der Wein ist lebendig und ausdrucksstark mit einem klaren, frischen Finish.",
       "quickfacts": [
         {
@@ -142,7 +141,6 @@
       "key": "amayna",
       "name": "Amayna Sauvignon Blanc 2023",
       "bottle_image": "amayna.png",
-      "background_image": "amayna.bg.jpg",
       "description": "Ein cremiger und saftiger Sauvignon Blanc aus dem Leyda Valley in Chile. Der Wein zeigt Aromen von Limette, weißem Pfirsich, Ananas, mineralischen Noten und Kräutern, mit einer ausgewogenen Säure und einem salzigen Finish.",
       "quickfacts": [
         {
@@ -195,7 +193,6 @@
       "key": "gamlitz",
       "name": "Gamlitz Sauvignon Blanc 2022",
       "bottle_image": "gamlitz.png",
-      "background_image": "gamlitz.bg.jpg",
       "description": "Der Gamlitz Sauvignon Blanc zeigt eine ausgewogene Mischung von Paprika und Holunder, mit einer frischen und klaren Struktur. Der Wein wird durch seine dezente Säure und ein frisches Finish geprägt.",
       "quickfacts": [
         {
@@ -240,7 +237,6 @@
       "key": "rotschiefer",
       "name": "Rotschiefer Sauvignon Blanc 2023",
       "bottle_image": "rotschiefer.png",
-      "background_image": "rotschiefer.bg.jpg",
       "description": "Ein Sauvignon Blanc mit salzig-mineralischer Note und Aromen reifer Zitrusfrüchte. Der Wein bietet einen cremigen Schmelz und eine harmonische Balance zwischen Frische und Struktur.",
       "quickfacts": [
         {
@@ -315,7 +311,6 @@
       "key": "leidenschaft",
       "name": "Leidenschaft 2023",
       "bottle_image": "leidenschaft.png",
-      "background_image": "background.jpg",
       "description": "Ein eleganter Sauvignon Blanc aus der Pfalz mit Ausbau im kleinen Holzfass. Der Wein vereint Aromen von Maracuja und Stachelbeere, gepaart mit einer lebhaften Säure und einer harmonischen Balance.",
       "quickfacts": [
         {

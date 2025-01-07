@@ -40,13 +40,8 @@ export const Wine = ({ wines, wineries, showOverlay }: WineProps) => {
 
   return (
     wine && (
-      <div
-        style={{
-          backgroundImage: `url('${backgroundImagePath}')`,
-        }}
-        className="wine-portrait bg-repeat bg-cover w-full h-full px-2 py-8 min-h-dvh"
-      >
-        <div className="wine @[1024px]/main:w-11/12 w-full m-auto bg-stone-200 bg-opacity-75 text-stone-700 wine p-4 list-none grid grid-cols-12 gap-2 shadow-slate-500 shadow-sm rounded-md mb-2 last:mb-0">
+      <div className="wine-portrait bg-stone-400 bg-no-repeat bg-cover w-full h-full px-2 py-8 min-h-dvh">
+        <div className="wine @[1024px]/main:w-[95%] w-full m-auto bg-stone-200 bg-opacity-75 text-stone-700 wine p-4 list-none grid grid-cols-12 gap-2 shadow-slate-500 shadow-sm rounded-md mb-2 last:mb-0">
           <div className="flex flex-col justify-start items-start col-span-12">
             <div className="flex items-center mb-4 gap-4">
               <CountryLogo

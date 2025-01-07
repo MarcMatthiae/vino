@@ -40,7 +40,7 @@ export const Winery = ({ winery, wineries }: WineryProps) => {
   return (
     wineryToUse && (
       <div className="flex flex-col gap-2">
-        <div className="winery @[1024px]/main:w-11/12 w-full bg-stone-200 bg-opacity-75 p-4 list-none flex flex-col shadow-slate-500 shadow-sm rounded-md gap-8">
+        <div className="winery @[1024px]/main:w-[95%] w-full bg-stone-200 bg-opacity-75 p-4 list-none flex flex-col shadow-slate-500 shadow-sm rounded-md gap-8">
           <div>
             <div className="name">
               <div className="flex items-center gap-6">
