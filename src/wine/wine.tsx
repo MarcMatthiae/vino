@@ -49,7 +49,7 @@ export const Wine = ({ wines, wineries, showOverlay }: WineProps) => {
   return (
     wine && (
       <div className="wine-portrait bg-stone-400 bg-no-repeat bg-cover w-full h-full px-2 py-8 min-h-dvh">
-        <div className="wine @[1024px]/main:w-[95%] w-full m-auto bg-stone-200 bg-opacity-75 text-stone-700 wine p-4 list-none grid grid-cols-12 gap-2 shadow-slate-500 shadow-sm rounded-md mb-2 last:mb-0">
+        <div className="wine @[1024px]/main:w-[95%] w-full m-auto bg-stone-100 bg-opacity-75 text-stone-700 wine p-4 list-none grid grid-cols-12 gap-2 shadow-slate-500 shadow-sm rounded-md mb-2 last:mb-0">
           <div className="flex flex-col justify-start items-start col-span-12">
             <div className="flex items-center mb-4 gap-4">
               <CountryLogo
@@ -67,60 +67,68 @@ export const Wine = ({ wines, wineries, showOverlay }: WineProps) => {
               {wine.quickfacts?.map((quickfact) => {
                 return (
                   <li className="grid grid-cols-12 border-b border-stone-700 p-4">
-                    <div className="col-span-3 font-bold">
+                    <div className="@[1024px]/main:col-span-3 col-span-12 font-bold">
                       {quickfact.label}
                     </div>
-                    <div className="col-span-9 text-right">
+                    <div className="@[1024px]/main:col-span-9 col-span-12 @[1024px]/main:text-right">
                       {quickfact.value}
                     </div>
                   </li>
                 );
               })}
               <li className="grid grid-cols-12 border-b border-stone-700 p-4">
-                <div className="col-span-3 font-bold">Vinifikation</div>
-                <div className="col-span-9 text-right">
+                <div className="@[1024px]/main:col-span-3 col-span-12 font-bold">
+                  Vinifikation
+                </div>
+                <div className="@[1024px]/main:col-span-9 col-span-12 @[1024px]/main:text-right">
                   <HorizontalList items={wine.vinification}></HorizontalList>
                 </div>
               </li>
               <li className="grid grid-cols-12 border-b border-stone-700 p-4">
-                <div className="col-span-3 font-bold">Geschmack</div>
+                <div className="@[1024px]/main:col-span-3 col-span-12 font-bold">
+                  Geschmack
+                </div>
                 {tastesVisible ? (
-                  <div className="col-span-9 flex gap-3 justify-end items-center">
+                  <div className="@[1024px]/main:col-span-9 col-span-12 flex @[1024px]/main:flex-row flex-col gap-3 justify-end items-center">
+                    <HorizontalList items={wine.tastes}></HorizontalList>
                     <button
                       className="bg-orange-200 p-2 rounded-md border-stone-700 border"
                       onClick={() => handleOnClick()}
                     >
                       Ausblenden
                     </button>
-                    <HorizontalList items={wine.tastes}></HorizontalList>
                   </div>
                 ) : (
-                  <div className="col-span-9 flex gap-3 justify-end  items-center">
+                  <div className="@[1024px]/main:col-span-9 col-span-12 flex @[1024px]/main:flex-row flex-col gap-3 justify-end  items-center">
+                    <div className="flex">
+                      {[...Array(wine.tastes?.length).keys()]?.map((index) => {
+                        return (
+                          <img className="h-8" src="/assets/favicon.png"></img>
+                        );
+                      })}
+                    </div>
                     <button
                       className="bg-emerald-300 p-2 rounded-md border-stone-700 border"
                       onClick={() => handleOnClick()}
                     >
                       Anzeigen ({wine.tastes?.length})
                     </button>
-                    {[...Array(wine.tastes?.length).keys()]?.map((index) => {
-                      return (
-                        <img className="h-8" src="/assets/favicon.png"></img>
-                      );
-                    })}
                   </div>
                 )}
               </li>
               <li className="grid grid-cols-12 border-b border-stone-700 p-4">
-                <div className="col-span-3 font-bold">Besonderheiten</div>
-                <div className="col-span-9 text-right">
+                <div className="@[1024px]/main:col-span-3 col-span-12 font-bold">
+                  Besonderheiten
+                </div>
+                <div className="@[1024px]/main:col-span-9 col-span-12 @[1024px]/main:text-right">
                   <HorizontalList items={wine.besonderheiten}></HorizontalList>
                 </div>
               </li>
               <li className="grid grid-cols-12 border-b border-stone-700 p-4">
-                <div className="col-span-3 font-bold">
+                <div className="@[1024px]/main:col-span-3 col-span-12 font-bold">
                   Besonderheiten Anbaugebiet
                 </div>
-                <div className="col-span-9 text-right">
+                <div className="@[1024px]/main:col-span-9 col-span-12 @[1024px]/main:text-right">
                   <HorizontalList
                     items={wine.besonderheiten_anbaugebiet}
                   ></HorizontalList>
@@ -131,7 +139,7 @@ export const Wine = ({ wines, wineries, showOverlay }: WineProps) => {
 
           <div className="col-span-3 flex justify-center">
             <img
-              className="max-h-[800px] h-[800px] object-contain col-span-3"
+              className="@[1024px]/main:max-h-[800px] @[1024px]/main:h-[800px] max-h-[200px] h-[200px] object-contain col-span-3"
               src={"/assets/wines/" + wine.key + "/bottle.png"}
               alt={`${wine.name} wine`}
             />

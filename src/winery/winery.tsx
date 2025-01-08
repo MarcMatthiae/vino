@@ -2,6 +2,7 @@ import { useParams } from "react-router";
 import "./winery.css";
 import { Image } from "../image-viewer/model";
 import { Gallery } from "../image-viewer/gallery";
+import YoutubeEmbed from "../youtube-viewer/youtube-viewer";
 
 export interface WineryProps {
   winery?: WineryData;
@@ -18,6 +19,11 @@ export interface WineryData {
   impressions: Image[];
   country: string;
   country_name: string;
+  details: {
+    label: string;
+    value: string;
+  }[];
+  videoId: string;
 }
 
 export const Winery = ({ winery, wineries }: WineryProps) => {
@@ -40,7 +46,7 @@ export const Winery = ({ winery, wineries }: WineryProps) => {
   return (
     wineryToUse && (
       <div className="flex flex-col gap-2">
-        <div className="winery @[1024px]/main:w-[95%] w-full bg-stone-200 bg-opacity-75 p-4 list-none flex flex-col shadow-slate-500 shadow-sm rounded-md gap-8">
+        <div className="winery @[1024px]/main:w-[95%] w-full bg-stone-100 bg-opacity-75 p-4 list-none flex flex-col shadow-slate-500 shadow-sm rounded-md gap-8">
           <div>
             <div className="name">
               <div className="flex items-center gap-6">
@@ -62,22 +68,47 @@ export const Winery = ({ winery, wineries }: WineryProps) => {
               </div>
             </div>
           </div>
-          {wineryToUse.map_image && (
-            <div>
-              <hr className="h-0.5 bg-stone-400"></hr>
-              <h3 className="text-2xl font-bold text-stone-700 my-4">Lage</h3>
-              <img
-                src={
-                  "/assets/wineries/" +
-                  wineryToUse.key +
-                  "/" +
-                  wineryToUse.map_image
-                }
-                alt={`${wineryToUse.name} Logo`}
-                className="object-contain"
-              />
-            </div>
+
+          {wineryToUse.videoId && (
+            <>
+              {" "}
+              <hr className="h-[1px] bg-stone-400 border-none"></hr>
+              <YoutubeEmbed embedId={wineryToUse.videoId}></YoutubeEmbed>
+            </>
           )}
+          <hr className="h-[1px] bg-stone-400 border-none"></hr>
+          <div className="grid grid-cols-12 gap-4">
+            <div className="@[1024px]/main:col-span-6 col-span-12">
+              <ul>
+                {winery?.details?.map((detail) => {
+                  return (
+                    <li className="grid grid-cols-12 border-b border-stone-700 p-4">
+                      <div className="@[1024px]/main:col-span-3 col-span-12 font-bold">
+                        {detail.label}
+                      </div>
+                      <div className="@[1024px]/main:col-span-9 col-span-12 @[1024px]/main:text-right">
+                        {detail.value}
+                      </div>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+            {wineryToUse.map_image && (
+              <div className="@[1024px]/main:col-span-6 col-span-12">
+                <img
+                  src={
+                    "/assets/wineries/" +
+                    wineryToUse.key +
+                    "/" +
+                    wineryToUse.map_image
+                  }
+                  alt={`${wineryToUse.name} Logo`}
+                  className="object-contain rounded-lg"
+                />
+              </div>
+            )}
+          </div>
         </div>
         {impressions && impressions.length > 0 && (
           <Gallery images={impressions}></Gallery>

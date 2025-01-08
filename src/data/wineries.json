@@ -14,7 +14,14 @@
       "country": "at",
       "country_name": "Österreich",
       "founded": "50er Jahre",
-      "details": "Gründung durch den Großvater, Führung durch Sohn und Schwiegertochter"
+      "details": [
+        { "label": "Gründung", "value": "1938" },
+        {
+          "label": "Inhaber",
+          "value": "Gründung durch den Großvater, Führung durch Sohn und Schwiegertochter"
+        }
+      ],
+      "videoId": "LR808W_kdNc"
     },
     {
       "id": 2,
@@ -28,7 +35,8 @@
       ],
       "country": "cl",
       "country_name": "Chile",
-      "details": "Experten in \"cold-climate wines\""
+      "details": ["Experten in \"cold-climate wines\""],
+      "videoId": "XtTuPU356BU"
     },
     {
       "id": 3,
@@ -43,7 +51,13 @@
       "country": "nz",
       "country_name": "Neuseeland",
       "founded": "1997",
-      "details": "Tochter und Vater führen das Unternehmen, viel Wert auf Nachhaltigkeit"
+      "details": [
+        {
+          "label": "Inhaber",
+          "value": "Tochter und Vater führen das Unternehmen, viel Wert auf Nachhaltigkeit"
+        }
+      ],
+      "videoId": "BRYmCptEULU"
     },
     {
       "id": 4,
@@ -58,7 +72,8 @@
       "logo": "logo.png",
       "country": "at",
       "country_name": "Österreich",
-      "location": "Gamlitz"
+      "location": "Gamlitz",
+      "videoId": "z8eI9cRhCRU"
     },
     {
       "id": 5,
@@ -71,7 +86,8 @@
       ],
       "country": "at",
       "country_name": "Österreich",
-      "name": "Hannes Sabathi"
+      "name": "Hannes Sabathi",
+      "videoId": "DjoF5pgCMPA"
     },
     {
       "id": 6,
@@ -86,7 +102,8 @@
       ],
       "country": "at",
       "country_name": "Österreich",
-      "name": "Schauer"
+      "name": "Schauer",
+      "videoId": "LP_4pGnibk8"
     },
     {
       "id": 7,
@@ -106,7 +123,8 @@
         { "src": "forst.jpg", "alt": "Forst" }
       ],
       "logo": "logo.png",
-      "name": "Eugen Müller"
+      "name": "Eugen Müller",
+      "videoId": "icZmh0MWpAg"
     }
   ]
 }
