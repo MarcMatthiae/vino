@@ -20,7 +20,7 @@ export const ImageModal = ({
   return (
     image && (
       <div
-        className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50 overflow-auto h-full w-full"
+        className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50 overflow-auto h-full w-full max-h-dvh max-w-[100vw]"
         onClick={onClose}
       >
         <img
