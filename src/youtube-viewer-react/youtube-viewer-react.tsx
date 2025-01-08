@@ -7,9 +7,10 @@ const YoutubeEmbedReact = ({ embedId }: { embedId: string }) => {
   // Options for the YouTube player
   const opts = {
     height: "800",
-    width: "1024",
+    width: "1080",
     playerVars: {
       autoplay: 0, // Do not Auto-play the video
+      rel: 0,
     },
   };
 
