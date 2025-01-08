@@ -108,9 +108,9 @@ export const Wine = ({ wines, wineries, showOverlay }: WineProps) => {
                 </h2>
               </div>
             </div>
-            <div className="flex flex-col justify-start items-start col-span-9 gap-4">
+            <div className="flex flex-col justify-start items-start @[1024px]/main:col-span-9 col-span-12 gap-4">
               <p className="text-left text-[16px]">{wine.description}</p>
-              <ul className="w-4/5">
+              <ul className="@[1024px]/main:w-4/5 w-full">
                 {wine.quickfacts?.map((quickfact) => {
                   return (
                     <li className="grid grid-cols-12 border-b border-stone-700 p-4">
@@ -132,11 +132,11 @@ export const Wine = ({ wines, wineries, showOverlay }: WineProps) => {
                   </div>
                 </li>
                 <li className="grid grid-cols-12 border-b border-stone-700 p-4">
-                  <div className="@[1024px]/main:col-span-3 col-span-12 font-bold">
+                  <div className="@[1024px]/main:col-span-3 col-span-12 font-bold @[1024px]/main:mb-0 mb-4">
                     Geschmack
                   </div>
                   {tastesVisible ? (
-                    <div className="@[1024px]/main:col-span-9 col-span-12 flex @[1024px]/main:flex-row flex-col gap-3 justify-end items-center">
+                    <div className="@[1024px]/main:col-span-9 col-span-12 flex @[1024px]/main:flex-row flex-col gap-3 @[1024px]/main:justify-end @[1024px]/main:items-center items-start">
                       <HorizontalList items={wine.tastes}></HorizontalList>
                       <button
                         className="bg-orange-200 p-2 rounded-md border-stone-700 border"
@@ -146,7 +146,7 @@ export const Wine = ({ wines, wineries, showOverlay }: WineProps) => {
                       </button>
                     </div>
                   ) : (
-                    <div className="@[1024px]/main:col-span-9 col-span-12 flex @[1024px]/main:flex-row flex-col gap-3 justify-end  items-center">
+                    <div className="@[1024px]/main:col-span-9 col-span-12 flex @[1024px]/main:flex-row flex-col gap-3 @[1024px]/main:justify-end @[1024px]/main:items-center items-start">
                       <div className="flex">
                         {[...Array(wine.tastes?.length).keys()]?.map(
                           (index) => {
@@ -191,9 +191,9 @@ export const Wine = ({ wines, wineries, showOverlay }: WineProps) => {
               </ul>
             </div>
 
-            <div className="col-span-3 flex justify-center">
+            <div className="@[1024px]/main:col-span-3 col-span-12 flex justify-center">
               <img
-                className="@[1024px]/main:max-h-[800px] @[1024px]/main:h-[800px] max-h-[200px] h-[200px] object-contain col-span-3"
+                className="@[1024px]/main:max-h-[800px] @[1024px]/main:h-[800px] max-h-[300px] h-[300px] object-contain col-span-3"
                 src={"/assets/wines/" + wine.key + "/bottle.png"}
                 alt={`${wine.name} wine`}
               />
