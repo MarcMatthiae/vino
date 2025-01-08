@@ -3,6 +3,7 @@ import "./winery.css";
 import { Image } from "../image-viewer/model";
 import { Gallery } from "../image-viewer/gallery";
 import YoutubeEmbed from "../youtube-viewer/youtube-viewer";
+import YoutubeEmbedReact from "../youtube-viewer-react/youtube-viewer-react";
 
 export interface WineryProps {
   winery?: WineryData;
@@ -105,7 +106,9 @@ export const Winery = ({ winery, wineries }: WineryProps) => {
             <>
               {" "}
               <hr className="h-[1px] bg-stone-400 border-none"></hr>
-              <YoutubeEmbed embedId={wineryToUse.videoId}></YoutubeEmbed>
+              <YoutubeEmbedReact
+                embedId={wineryToUse.videoId}
+              ></YoutubeEmbedReact>
             </>
           )}
         </div>
