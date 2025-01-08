@@ -7,6 +7,7 @@ import { WineList } from "./wine-list/wine-list";
 import { BrowserRouter, Link, Route, Routes } from "react-router";
 import { Wine } from "./wine/wine";
 import { WineryList } from "./winery-list/winery-list";
+import { GallerySingle } from "./image-viewer/gallery-single";
 
 function App() {
   const wineArray = wineData.wines;
@@ -46,6 +47,10 @@ function App() {
                 showOverlay={(imgSrc) => showOverlay(imgSrc)}
               />
             }
+          />
+          <Route
+            path="wine/gallery/:wineryId"
+            element={<GallerySingle wineries={wineryArray} />}
           />
           <Route
             path="wineries"

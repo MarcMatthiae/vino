@@ -1,4 +1,4 @@
-import { useParams } from "react-router";
+import { useNavigate, useParams } from "react-router";
 import "./winery.css";
 import { Image } from "../image-viewer/model";
 import { Gallery } from "../image-viewer/gallery";
@@ -115,7 +115,10 @@ export const Winery = ({ winery, wineries }: WineryProps) => {
         </div>
 
         {impressions && impressions.length > 0 && (
-          <Gallery images={impressions}></Gallery>
+          <Gallery
+            images={impressions}
+            allItemRoute={`/wine/gallery/${wineryToUse.id}`}
+          ></Gallery>
         )}
       </div>
     )
