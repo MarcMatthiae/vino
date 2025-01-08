@@ -117,7 +117,6 @@ export const Winery = ({ winery, wineries }: WineryProps) => {
         {impressions && impressions.length > 0 && (
           <Gallery images={impressions}></Gallery>
         )}
-        <ImageModal isOpen={true} image={impressions[0]}></ImageModal>
       </div>
     )
   );
