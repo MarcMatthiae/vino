@@ -68,17 +68,9 @@ export const Winery = ({ winery, wineries }: WineryProps) => {
               </div>
             </div>
           </div>
-
-          {wineryToUse.videoId && (
-            <>
-              {" "}
-              <hr className="h-[1px] bg-stone-400 border-none"></hr>
-              <YoutubeEmbed embedId={wineryToUse.videoId}></YoutubeEmbed>
-            </>
-          )}
           <hr className="h-[1px] bg-stone-400 border-none"></hr>
           <div className="grid grid-cols-12 gap-4">
-            <div className="@[1024px]/main:col-span-6 col-span-12">
+            {/* <div className="@[1024px]/main:col-span-6 col-span-12">
               <ul>
                 {winery?.details?.map((detail) => {
                   return (
@@ -93,9 +85,9 @@ export const Winery = ({ winery, wineries }: WineryProps) => {
                   );
                 })}
               </ul>
-            </div>
+            </div> */}
             {wineryToUse.map_image && (
-              <div className="@[1024px]/main:col-span-6 col-span-12">
+              <div className="col-span-12 flex justify-center">
                 <img
                   src={
                     "/assets/wineries/" +
@@ -109,7 +101,15 @@ export const Winery = ({ winery, wineries }: WineryProps) => {
               </div>
             )}
           </div>
+          {wineryToUse.videoId && (
+            <>
+              {" "}
+              <hr className="h-[1px] bg-stone-400 border-none"></hr>
+              <YoutubeEmbed embedId={wineryToUse.videoId}></YoutubeEmbed>
+            </>
+          )}
         </div>
+
         {impressions && impressions.length > 0 && (
           <Gallery images={impressions}></Gallery>
         )}
