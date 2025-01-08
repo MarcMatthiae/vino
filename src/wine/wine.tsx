@@ -203,9 +203,9 @@ export const Wine = ({ wines, wineries, showOverlay }: WineProps) => {
             <Winery winery={winery} showOverlay={showOverlay}></Winery>
           )}
         </div>
-        <div className="h-20 fixed bottom-0 box-border border-t z-50 w-full @[1024px]/main:px-16 flex justify-start items-center shadow-[0px_-4px_6px_rgba(0,0,0,0.1)] bg-stone-200 py-2">
+        <div className="h-20 sticky bottom-0 box-border border-t z-50 w-full @[1024px]/main:px-16 flex justify-start items-center shadow-[0px_-4px_6px_rgba(0,0,0,0.1)] bg-stone-200 py-2">
           <div className="m-auto flex items-center gap-4">
-            <div>Jetzt bewerten:</div>
+            <div className="@[1024px]/main:block hidden">Jetzt bewerten:</div>
             <div className="m-auto flex items-center gap-2">
               {[6, 5, 4, 3, 2, 1].map((evaluation) => (
                 <button

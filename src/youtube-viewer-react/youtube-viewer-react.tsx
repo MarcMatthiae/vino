@@ -6,8 +6,6 @@ const YoutubeEmbedReact = ({ embedId }: { embedId: string }) => {
 
   // Options for the YouTube player
   const opts = {
-    height: "800",
-    width: "1080",
     playerVars: {
       autoplay: 0, // Do not Auto-play the video
       rel: 0,
@@ -41,8 +39,11 @@ const YoutubeEmbedReact = ({ embedId }: { embedId: string }) => {
   };
 
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center max-w-full">
       <YouTube
+        iframeClassName={
+          "@[1024px]/main:w-[1080px] max-w-full @[1024px]/main:h-[800px] h-[200px]"
+        }
         videoId={embedId}
         opts={opts}
         onReady={onReady}

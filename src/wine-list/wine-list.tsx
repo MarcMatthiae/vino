@@ -42,8 +42,8 @@ export const WineList = ({ wines }: WineListProps) => {
             >
               <div className="flex flex-col justify-start items-start col-span-2">
                 {evaluation ? (
-                  <div className="mt-1 text-sm text-stone-600 border border-stone-600 h-40 w-40 rounded-md flex items-center justify-center">
-                    <p className="text-[50px]">
+                  <div className="mt-1 text-stone-600 border border-stone-600 @[1024px]/main:h-40 @[1024px]/main:w-40 h-12 w-12 rounded-md flex items-center justify-center">
+                    <p className="@[1024px]/main:text-[50px] text-[30px]">
                       {evaluation === 6 && "\u{1F92E}"}
                       {evaluation === 5 && "\u{1F922}"}
                       {evaluation === 4 && "\u{1F974}"}
@@ -53,21 +53,21 @@ export const WineList = ({ wines }: WineListProps) => {
                     </p>
                   </div>
                 ) : (
-                  <div className="mt-1 text-sm text-stone-600 border border-stone-600 h-40 w-40 rounded-md flex items-center justify-center">
-                    <p className="text-[14px] text-center">
+                  <div className="mt text-stone-600 border border-stone-600 @[1024px]/main:h-40 @[1024px]/main:w-40 h-12 w-12 rounded-md flex items-center justify-center">
+                    <p className="@[1024px]/main:text-[14px] text-[8px] text-center">
                       Bewertung ausstehend
                     </p>
                   </div>
                 )}
               </div>
-              <div className="flex flex-col justify-start items-start col-span-7">
-                <h2 className="text-left text-xl font-extralight">
+              <div className="flex flex-col justify-start items-start text-left col-span-8">
+                <h2 className="text-left @[1024px]/main:text-xl text-lg font-extralight">
                   {wine.name}
                 </h2>
               </div>
-              <div className="col-span-3 flex justify-end">
+              <div className="col-span-2 flex justify-end">
                 <img
-                  className="max-h-[200px] h-[200px] object-contain"
+                  className="@[1024px]/main:max-h-[200px] @[1024px]/main:h-[200px] max-h-[150px] h-[150px] object-contain"
                   src={"/assets/wines/" + wine.key + "/bottle.png"}
                   alt={`${wine.name} wine`}
                 />
