@@ -3,6 +3,7 @@ import { Winery, WineryData } from "../winery/winery";
 import { CountryLogo } from "../ui-components/country-logo";
 import { HorizontalList } from "../ui-components/horizontal-list";
 import { useState } from "react";
+import ImageModal from "../image-viewer/modal";
 
 export interface WineProps {
   wines: Wine[];

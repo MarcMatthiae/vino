@@ -1,4 +1,3 @@
-import React, { useEffect, useRef, useState } from "react";
 import { Image } from "./model";
 
 export interface ImageModalProps {
@@ -21,12 +20,12 @@ export const ImageModal = ({
   return (
     image && (
       <div
-        className="absolute inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50 overflow-auto h-lvh"
+        className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50 overflow-auto h-full w-full"
         onClick={onClose}
       >
         <img
           className="object-contain max-w-[90%] max-h-[90%] m-auto"
-          src={`/assets/${image.src}`}
+          src={`${image.src}`}
           alt={image.alt}
         />
         <button

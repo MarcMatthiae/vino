@@ -4,6 +4,7 @@ import { Image } from "../image-viewer/model";
 import { Gallery } from "../image-viewer/gallery";
 import YoutubeEmbed from "../youtube-viewer/youtube-viewer";
 import YoutubeEmbedReact from "../youtube-viewer-react/youtube-viewer-react";
+import ImageModal from "../image-viewer/modal";
 
 export interface WineryProps {
   winery?: WineryData;
@@ -116,6 +117,7 @@ export const Winery = ({ winery, wineries }: WineryProps) => {
         {impressions && impressions.length > 0 && (
           <Gallery images={impressions}></Gallery>
         )}
+        <ImageModal isOpen={true} image={impressions[0]}></ImageModal>
       </div>
     )
   );
