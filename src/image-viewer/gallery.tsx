@@ -11,7 +11,7 @@ export const Gallery = ({ images, allItemRoute }: GalleryProps) => {
   const navigate = useNavigate();
   return (
     <div className="@[1024px]/main:w-[95%] w-full  bg-stone-100 bg-opacity-75 p-4 list-none flex flex-col shadow-slate-500 shadow-sm rounded-md m-auto">
-      <div className="flex gap-8">
+      <div className="flex @[1024px]/main:flex-row flex-col @[1024px]/main:gap-8 gap-2">
         <Headline>Impressionen</Headline>
         <button
           className="bg-emerald-300 p-2 rounded-md border-stone-700 border hover:bg-emerald-700 hover:text-white"
