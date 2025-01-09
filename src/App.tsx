@@ -49,7 +49,7 @@ function App() {
             }
           />
           <Route
-            path="wine/gallery/:wineryId"
+            path="winery/gallery/:wineryId"
             element={<GallerySingle wineries={wineryArray} />}
           />
           <Route

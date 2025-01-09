@@ -117,7 +117,7 @@ export const Winery = ({ winery, wineries }: WineryProps) => {
         {impressions && impressions.length > 0 && (
           <Gallery
             images={impressions}
-            allItemRoute={`/wine/gallery/${wineryToUse.id}`}
+            allItemRoute={`/winery/gallery/${wineryToUse.id}`}
           ></Gallery>
         )}
       </div>

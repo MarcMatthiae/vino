@@ -1,4 +1,4 @@
-import { useParams } from "react-router";
+import { Link, useParams } from "react-router";
 import { WineryData } from "../winery/winery";
 
 export interface GallerySingleProps {
