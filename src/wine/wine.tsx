@@ -13,6 +13,7 @@ export interface WineProps {
 
 export interface Wine {
   id: number;
+  order: number;
   key: string;
   winery_id: number;
   name: string;

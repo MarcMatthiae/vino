@@ -2,6 +2,7 @@
   "wines": [
     {
       "id": 1,
+      "order": 3,
       "winery_id": 3,
       "key": "golden-mile",
       "name": "Golden Mile Marlborough Sauvignon Blanc 2023",
@@ -98,6 +99,7 @@
     },
     {
       "id": 3,
+      "order": 2,
       "winery_id": 4,
       "key": "sand-schotter",
       "name": "Sand&Schotter Sauvignon Blanc 2023",
@@ -190,6 +192,7 @@
     {
       "id": 5,
       "winery_id": 5,
+      "order": 4,
       "key": "gamlitz",
       "name": "Gamlitz Sauvignon Blanc 2022",
       "bottle_image": "gamlitz.png",
@@ -307,6 +310,7 @@
     },
     {
       "id": 8,
+      "order": 1,
       "winery_id": 8,
       "key": "leidenschaft",
       "name": "Leidenschaft 2023",

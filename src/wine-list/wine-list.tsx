@@ -9,6 +9,15 @@ export interface WineListProps {
 
 export const WineList = ({ wines }: WineListProps) => {
   const navigate = useNavigate();
+  const sortedWines = [...wines].sort((a, b) => {
+    if (a.order === undefined && b.order === undefined) {
+      // If both orders are undefined, sort by name
+      return a.name.localeCompare(b.name);
+    }
+    if (a.order === undefined) return 1; // Move a to the end if order is undefined
+    if (b.order === undefined) return -1; // Move b to the end if order is undefined
+    return a.order - b.order; // Regular numeric comparison for defined orders
+  });
 
   const [wineEvaluations, setWineEvaluations] = useState<
     Array<{ [key: string]: number }>
@@ -31,7 +40,7 @@ export const WineList = ({ wines }: WineListProps) => {
   return (
     <div className="wine-list">
       <ul className="@[1024px]/main:w-2/3 w-full m-auto">
-        {wines.map((wine) => {
+        {sortedWines.map((wine) => {
           const evaluation = getEvaluationForWine(wine.id); // Get evaluation for this wine
 
           return (
@@ -42,7 +51,7 @@ export const WineList = ({ wines }: WineListProps) => {
             >
               <div className="flex flex-col justify-start items-start col-span-2">
                 {evaluation ? (
-                  <div className="mt-1 text-stone-600 border border-stone-600 @[1024px]/main:h-40 @[1024px]/main:w-40 h-12 w-12 rounded-md flex items-center justify-center">
+                  <div className="mt-1 text-stone-600 border border-stone-600 @[1024px]/main:h-28 @[1024px]/main:w-28 h-12 w-12 rounded-md flex items-center justify-center">
                     <p className="@[1024px]/main:text-[50px] text-[30px]">
                       {evaluation === 6 && "\u{1F92E}"}
                       {evaluation === 5 && "\u{1F922}"}
@@ -53,7 +62,7 @@ export const WineList = ({ wines }: WineListProps) => {
                     </p>
                   </div>
                 ) : (
-                  <div className="mt text-stone-600 border border-stone-600 @[1024px]/main:h-40 @[1024px]/main:w-40 h-12 w-12 rounded-md flex items-center justify-center">
+                  <div className="mt text-stone-600 border border-stone-600 @[1024px]/main:h-28 @[1024px]/main:w-28 h-12 w-12 rounded-md flex items-center justify-center">
                     <p className="@[1024px]/main:text-[14px] text-[8px] text-center">
                       Bewertung ausstehend
                     </p>
